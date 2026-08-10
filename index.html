@@ -4,256 +4,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>网盘集市 - 云盘资源导航站 | 收录百度阿里夸克等76+网盘搜索引擎</title>
-  <meta name="description" content="网盘集市收录全网优质网盘搜索站与资源站，提供百度网盘、阿里云盘、夸克网盘、迅雷云盘等76+网盘搜索引擎一站式导航。快速找到你需要的网盘资源、影视、电子书、软件工具。">
+  <title>网盘集市 - 精选132个网盘搜索站 | 百度阿里夸克迅雷资源导航</title>
+  <meta name="description" content="网盘集市精选132个网盘搜索站与资源站，覆盖百度网盘、阿里云盘、夸克网盘、迅雷云盘等主流云盘，一站式资源导航。">
   <meta name="keywords" content="网盘搜索,网盘导航,百度网盘搜索,阿里云盘搜索,夸克网盘,迅雷云盘,网盘资源,网盘搜索引擎,盘搜,云盘资源,网盘聚合搜索">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="网盘集市">
-  <meta name="theme-color" content="#FAFAFA">
+  <meta name="theme-color" content="#2563EB">
   <link rel="canonical" href="https://pan-nav.example.com/">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preload" href="./_shared/fonts/WorkSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="./_shared/fonts/WorkSans-Bold.ttf" as="font" type="font/ttf" crossorigin>
   <!-- Open Graph -->
-  <meta property="og:title" content="网盘集市 - 云盘资源导航站">
-  <meta property="og:description" content="收录百度、阿里、夸克、迅雷等76+网盘搜索引擎，一站式网盘资源导航站。">
+  <meta property="og:title" content="网盘集市 - 精选132个网盘搜索站">
+  <meta property="og:description" content="精选132个网盘搜索站与资源站，覆盖百度、阿里、夸克、迅雷等主流云盘。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pan-nav.example.com/">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:site_name" content="网盘集市">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="网盘集市 - 云盘资源导航站">
-  <meta name="twitter:description" content="收录百度、阿里、夸克、迅雷等76+网盘搜索引擎，一站式网盘资源导航站。">
+  <meta name="twitter:title" content="网盘集市 - 精选132个网盘搜索站">
+  <meta name="twitter:description" content="精选132个网盘搜索站与资源站，覆盖百度、阿里、夸克、迅雷等主流云盘。">
   <style>
-    @font-face {
+@font-face {
       font-family: 'WorkSans';
       src: url('./_shared/fonts/WorkSans-Regular.ttf') format('truetype');
       font-weight: 400;
+      font-display: swap;
     }
     @font-face {
       font-family: 'WorkSans';
       src: url('./_shared/fonts/WorkSans-Bold.ttf') format('truetype');
       font-weight: 700;
+      font-display: swap;
     }
 
     :root {
-      --bg: #FAFAFA;
-      --bg2: #FFFFFF;
-      --surface: #FFFFFF;
-      --text: #212121;
-      --text2: #757575;
-      --border: #E0E0E0;
-      --border-hover: #BDBDBD;
-      --accent: #2196F3;
-      --accent2: #9C27B0;
-      --glow: none;
-      --glass: #FFFFFF;
+      --primary: #2563EB;
+      --primary-hover: #3B82F6;
+      --primary-bg: #EFF6FF;
+      --bg-body: #FBFBFD;
+      --bg-card: #FFFFFF;
+      --bg-hover: #F8F9FB;
+      --text-primary: #1A1A2E;
+      --text-secondary: #6B7280;
+      --text-tertiary: #9CA3AF;
+      --border-subtle: #F0F1F3;
+      --shadow-rest: 0 2px 8px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.04);
+      --shadow-hover: 0 8px 24px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.06);
+      --shadow-elevated: 0 8px 24px rgba(0,0,0,0.10), 0 2px 6px rgba(0,0,0,0.04);
+      --r-sm: 6px;
+      --r-md: 10px;
+      --r-lg: 14px;
+      --r-full: 9999px;
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+      --dur: 0.28s;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
 
-body {
-      font-family: 'WorkSans', 'SF Pro Display', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.5;
+    body {
+      font-family: 'WorkSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background: var(--bg-body);
+      color: var(--text-primary);
+      font-size: 14px;
+      line-height: 1.6;
       min-height: 100vh;
       -webkit-font-smoothing: antialiased;
-      position: relative;
+      -moz-osx-font-smoothing: grayscale;
       overflow-x: hidden;
     }
-
-/* Grid pattern overlay */
-    body::after {
-      content: '';
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background-image:
-        linear-gradient(rgba(0,0,0,0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,0,0,0.025) 1px, transparent 1px);
-      background-size: 60px 60px;
-      z-index: -1;
-      pointer-events: none;
-    }
-
-    /* ===== Header ===== */
     header {
-      padding: 4rem 1.5rem 2.5rem;
+      padding: 4rem 1.5rem 1.5rem;
       text-align: center;
       position: relative;
     }
-.header-content {
-      max-width: 600px;
+    .header-content {
+      max-width: 640px;
       margin: 0 auto;
-      position: relative;
     }
-
+    .site-tagline {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      color: var(--primary);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      padding: 0.25rem 0.875rem;
+      background: var(--primary-bg);
+      border-radius: var(--r-full);
+    }
     .site-title {
-      font-size: 2.5rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: var(--text);
-      margin-bottom: 0.4rem;
-    }
-50% { background-position: 100% 50%; }
+      font-size: 2.75rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text-primary);
+      margin-bottom: 0.625rem;
+      line-height: 1.1;
     }
     .site-title .accent-char {
-      color: var(--accent);
+      color: var(--primary);
     }
-
     .site-subtitle {
-      font-size: 0.92rem;
-      color: var(--accent);
-      margin-bottom: 2rem;
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
       font-weight: 400;
+      line-height: 1.6;
     }
-
-    /* ===== Search ===== */
-    .search-container {
-      max-width: 480px;
-      margin: 0 auto 0.5rem;
-      position: relative;
-    }
-    .search-box {
-      width: 100%;
-      padding: 0.85rem 1rem 0.85rem 2.6rem;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      background: var(--bg2);
-      font-size: 0.92rem;
-      font-family: inherit;
-      color: var(--text);
-      transition: all 0.3s ease;
-      outline: none;
-    }
-    .search-box:focus {
-      border-color: var(--accent);
-      outline: none;
-    }
-    .search-box::placeholder { color: var(--text2); }
-    .search-icon {
-      position: absolute;
-      left: 0.9rem;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--accent);
-      font-size: 1rem;
-      pointer-events: none;
-      transition: color 0.3s ease;
-    }
-    .search-box:focus + .search-icon { color: var(--accent); }
-    .search-hint {
-      font-size: 0.72rem;
-      color: var(--accent);
-      margin-top: 0.6rem;
-    }
-
-    /* ===== Ad Row ===== */
     .ad-row {
-      max-width: 480px;
-      margin: 1.25rem auto 0;
+      max-width: 520px;
+      margin: 0.75rem auto 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 0.6rem;
+      gap: 0.5rem;
       padding: 0 1rem;
     }
     .ad-bar {
       display: flex;
       align-items: center;
-      gap: 0.4rem;
-      padding: 0.45rem 0.85rem;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      font-size: 0.82rem;
-      transition: all 0.15s ease;
+      gap: 0.5rem;
+      padding: 0.4375rem 0.875rem;
+      background: var(--bg-card);
+      border-radius: var(--r-full);
+      font-size: 0.8125rem;
+      transition: all var(--dur) var(--ease);
       cursor: pointer;
+      border: 1px solid var(--border-subtle);
     }
     .ad-bar:hover {
-      background: #F5F5F5;
-      border-color: var(--border-hover);
+      border-color: #D1D5DB;
+      background: var(--bg-hover);
     }
     .ad-tag {
-      font-size: 0.62rem;
-      font-weight: 700;
-      color: var(--accent);
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+      font-size: 0.625rem;
+      font-weight: 600;
+      color: var(--primary);
+      background: var(--primary-bg);
+      padding: 0.125rem 0.5rem;
+      border-radius: var(--r-full);
+      letter-spacing: 0.02em;
     }
     .ad-bar a {
-      color: var(--text);
+      color: var(--text-primary);
       text-decoration: none;
-      font-weight: 400;
+      font-weight: 500;
     }
     .ad-go {
-      color: var(--accent);
-      font-size: 0.8rem;
-      transition: transform 0.2s ease;
+      color: var(--text-tertiary);
+      font-size: 0.75rem;
+      transition: transform var(--dur) var(--ease);
     }
-    .ad-bar:hover .ad-go { transform: translateX(2px); }
-
-    /* ===== Stats ===== */
+    .ad-bar:hover .ad-go { transform: translateX(2px); color: var(--primary); }
     .stats-bar {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 1.5rem 1.5rem 0.5rem;
+      padding: 0.5rem 1.5rem 0;
     }
     .stats-inner {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 2.5rem;
+      gap: 3rem;
       padding: 1.25rem 2rem;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
     }
     .stat-item { text-align: center; }
     .stat-num {
       font-size: 1.75rem;
-      font-weight: 700;
-      color: var(--accent);
-      line-height: 1.2;
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.1;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.02em;
     }
     .stat-label {
-      font-size: 0.7rem;
-      color: var(--accent);
-      margin-top: 0.15rem;
+      font-size: 0.6875rem;
+      color: var(--text-tertiary);
+      margin-top: 0.375rem;
       letter-spacing: 0.06em;
       text-transform: uppercase;
+      font-weight: 500;
     }
     .stat-divider {
       width: 1px;
       height: 32px;
-      background: var(--border);
+      background: var(--border-subtle);
     }
-
-    /* ===== Main ===== */
     main {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 1rem 1.5rem 4rem;
+      padding: 1.5rem 1.5rem 5rem;
     }
-
     .cards-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-      gap: 0.85rem;
+      grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+      gap: 0.75rem;
     }
-
-    /* ===== Card ===== */
     .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 0.85rem 1rem;
-      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      background: var(--bg-card);
+      border-radius: var(--r-md);
+      padding: 0.875rem 1rem;
+      transition: box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
       cursor: pointer;
       text-decoration: none;
       color: inherit;
@@ -261,101 +216,91 @@ body {
       align-items: center;
       gap: 0.75rem;
       position: relative;
-      overflow: hidden;
-      animation: cardIn 0.4s ease both;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02);
-    }
-    .card::after {
-      content: '';
-      position: absolute;
-      top: 0; left: -100%;
-      width: 100%; height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(33,150,243,0.04), transparent);
-      transition: left 0.6s ease;
-      pointer-events: none;
+      animation: cardIn 0.4s var(--ease) both;
+      box-shadow: var(--shadow-rest);
+      border: 1px solid transparent;
+      content-visibility: auto;
+      contain-intrinsic-size: 52px;
     }
     .card:hover {
-      background: #FAFAFA;
-      border-color: #BDBDBD;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06), 0 2px 4px rgba(0,0,0,0.04);
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-1px);
+      border-color: var(--border-subtle);
     }
-    .card:hover::after { left: 100%; }
     .card.hidden { display: none; }
-
-    /* ===== Tooltip ===== */
     .tooltip {
       position: fixed;
-      background: #424242;
+      background: #1A1A2E;
       color: #FFFFFF;
-      font-size: 0.78rem;
+      font-size: 0.75rem;
       font-weight: 400;
       line-height: 1.5;
       padding: 0.5rem 0.75rem;
-      border-radius: 4px;
+      border-radius: var(--r-sm);
       max-width: 260px;
       width: max-content;
       opacity: 0;
       visibility: hidden;
-      transition: opacity 0.15s ease;
+      transition: opacity 0.15s var(--ease);
       pointer-events: none;
       z-index: 9999;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.16);
     }
-    .tooltip.visible { opacity: 1; visibility: visible; }
-/* ===== Icon ===== */
     .card-icon {
-      width: 40px; height: 40px;
-      border-radius: 12px;
+      width: 36px; height: 36px;
+      border-radius: var(--r-sm);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.2rem;
+      font-size: 0.875rem;
+      font-weight: 700;
       flex-shrink: 0;
       position: relative;
-      z-index: 1;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: all var(--dur) var(--ease);
     }
+    .card-icon.cat-yunpan { background: #EFF6FF; color: #2563EB; }
+    .card-icon.cat-baidu  { background: #F0F9FF; color: #0EA5E9; }
+    .card-icon.cat-quark  { background: #ECFEFF; color: #0891B2; }
+    .card-icon.cat-other  { background: #F5F3FF; color: #7C3AED; }
     .card:hover .card-icon {
-      transform: scale(1.08) rotate(-2deg);
+      transform: scale(1.05);
+      filter: brightness(0.95);
     }
-    .card-icon::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: 12px;
-      opacity: 1;
-      z-index: -1;
-    }
-    .card-icon.i-search::before  { background: #E3F2FD; }
-    .card-icon.i-aliyun::before  { background: #E8EAF6; }
-    .card-icon.i-baidu::before   { background: #E3F2FD; }
-    .card-icon.i-quark::before   { background: #E0F7FA; }
-    .card-icon.i-xunlei::before  { background: #F3E5F5; }
-    .card-icon.i-lanzou::before  { background: #E8F5E9; }
-    .card-icon.i-ty::before      { background: #FFF3E0; }
-    .card-icon.i-123::before     { background: #E3F2FD; }
-    .card-icon.i-pikpak::before  { background: #FCE4EC; }
-    .card-icon.i-uc::before      { background: #FCE4EC; }
-    .card-icon.i-movie::before   { background: #FFEBEE; }
-    .card-icon.i-book::before    { background: #E8EAF6; }
-    .card-icon.i-soft::before    { background: #E8F5E9; }
-    .card-icon.i-tool::before    { background: #F3E5F5; }
 
+    .card-info {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.0625rem;
+    }
     .card-title {
-      font-size: 0.86rem;
+      font-size: 0.875rem;
       font-weight: 500;
-      color: var(--text);
+      color: var(--text-primary);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
       max-width: 100%;
-      transition: color 0.2s ease;
-      letter-spacing: 0.01em;
+      transition: color var(--dur) var(--ease);
+      line-height: 1.35;
     }
-    .card:hover .card-title { color: var(--accent); }
-
-
-    /* ===== Category Tabs ===== */
+    .card:hover .card-title { color: var(--primary); }
+    .card-badge {
+      flex-shrink: 0;
+      font-size: 0.625rem;
+      font-weight: 600;
+      padding: 0.125rem 0.4375rem;
+      border-radius: var(--r-full);
+      letter-spacing: 0.02em;
+      opacity: 0.7;
+      transition: opacity var(--dur) var(--ease);
+    }
+    .card-badge.cat-yunpan { background: #EFF6FF; color: #2563EB; }
+    .card-badge.cat-baidu  { background: #F0F9FF; color: #0EA5E9; }
+    .card-badge.cat-quark  { background: #ECFEFF; color: #0891B2; }
+    .card-badge.cat-other  { background: #F5F3FF; color: #7C3AED; }
+    .card:hover .card-badge { opacity: 1; }
     .cat-tabs {
       max-width: 1200px;
       margin: 0 auto 1.25rem;
@@ -363,149 +308,143 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 0.5rem;
+      gap: 0.375rem;
       flex-wrap: wrap;
     }
     .cat-tab {
-      padding: 0.45rem 1.1rem;
-      border: 1px solid var(--border);
-      border-radius: 100px;
-      background: var(--bg2);
-      color: var(--text2);
-      font-size: 0.8rem;
+      padding: 0.375rem 1rem;
+      border: none;
+      border-radius: var(--r-full);
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.8125rem;
       cursor: pointer;
-      transition: all 0.2s ease;
+      transition: all var(--dur) var(--ease);
       white-space: nowrap;
       font-family: inherit;
-      letter-spacing: 0.02em;
+      font-weight: 500;
     }
     .cat-tab:hover {
-      background: #F5F5F5;
-      border-color: var(--border-hover);
-      transform: translateY(-1px);
+      color: var(--text-primary);
+      background: var(--bg-hover);
     }
     .cat-tab.active {
-      background: var(--accent);
+      background: var(--text-primary);
       color: #FFFFFF;
-      border-color: var(--accent);
-      box-shadow: 0 2px 8px rgba(33,150,243,0.25);
     }
-    @media (max-width: 768px) {
-      .cat-tabs { padding: 0 1rem; gap: 0.4rem; margin-bottom: 1rem; }
-      .cat-tab { padding: 0.35rem 0.9rem; font-size: 0.75rem; }
-    }
-    /* ===== No Result ===== */
     .no-result {
       text-align: center;
       padding: 4rem 1rem;
-      color: var(--accent);
-      font-size: 0.9rem;
+      color: var(--text-tertiary);
+      font-size: 0.875rem;
       display: none;
     }
     .no-result.visible { display: block; }
-    .no-result-icon { font-size: 2.5rem; margin-bottom: 0.8rem; opacity: 0.4; }
-
-    /* ===== Footer ===== */
+    .no-result-icon { font-size: 2.5rem; margin-bottom: 0.75rem; opacity: 0.3; }
     footer {
       text-align: center;
-      padding: 2rem 1.5rem;
-      border-top: 1px solid var(--border);
-      color: var(--text2);
-      font-size: 0.78rem;
+      padding: 2.5rem 1.5rem;
+      color: var(--text-tertiary);
+      font-size: 0.75rem;
     }
     .footer-links {
       display: inline-flex;
       align-items: center;
-      gap: 1.25rem;
-      margin-top: 0.75rem;
+      gap: 0.75rem;
+      margin-top: 1rem;
     }
     .footer-links a {
-      color: var(--text2);
+      color: var(--text-secondary);
       text-decoration: none;
       display: inline-flex;
       align-items: center;
-      gap: 0.3rem;
-      padding: 0.35rem 0.7rem;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      transition: all 0.15s ease;
+      gap: 0.25rem;
+      padding: 0.375rem 0.75rem;
+      border-radius: var(--r-full);
+      transition: all var(--dur) var(--ease);
+      font-size: 0.75rem;
+      font-weight: 500;
     }
     .footer-links a:hover {
-      color: var(--accent);
-      border-color: var(--border-hover);
-      background: #F5F5F5;
+      color: var(--primary);
+      background: var(--primary-bg);
     }
     .footer-links .link-icon {
-      font-size: 0.85rem;
+      font-size: 0.8125rem;
     }
-/* ===== Back to Top ===== */
     .back-to-top {
       position: fixed;
       bottom: 1.5rem; right: 1.5rem;
-      width: 48px; height: 48px;
-      border-radius: 16px;
-      background: var(--surface);
-      color: var(--accent);
-      border: 0.5px solid var(--border);
+      width: 44px; height: 44px;
+      border-radius: var(--r-full);
+      background: var(--bg-card);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-subtle);
       cursor: pointer;
-      font-size: 1.2rem;
+      font-size: 1.125rem;
       display: flex;
       align-items: center;
       justify-content: center;
       opacity: 0;
       visibility: hidden;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: all var(--dur) var(--ease);
       z-index: 100;
-      backdrop-filter: blur(30px) saturate(1.3);
-      -webkit-backdrop-filter: blur(30px) saturate(1.3);
-      box-shadow: inset 0 0.5px 0.5px rgba(255,255,255,0.4), 0 1px 4px rgba(0,0,0,0.03);
+      box-shadow: var(--shadow-hover);
     }
     .back-to-top.visible { opacity: 1; visibility: visible; }
     .back-to-top:hover {
-      background: #1976D2;
+      background: var(--text-primary);
+      color: #FFFFFF;
+      border-color: var(--text-primary);
       transform: translateY(-2px);
     }
-
     @keyframes cardIn {
-      from { opacity: 0; transform: translateY(16px) scale(0.96); }
-      to { opacity: 1; transform: translateY(0) scale(1); }
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
-50% { transform: translateY(-6px); }
-    }
-33% { transform: translate(2%, 1%) scale(1.03); }
-      66% { transform: translate(-1%, 2%) scale(0.98); }
-    }
-50% { background-position: 100% 50%; }
-    }
-50% { box-shadow: 0 0 0 3px rgba(0,102,255,0.12), 0 0 30px rgba(0,102,255,0.1); }
-    }
-
-    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
     ::-webkit-scrollbar-track { background: transparent; }
-    ::-webkit-scrollbar-thumb { background: #BDBDBD; border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: #9E9E9E; }
-
-
+    ::-webkit-scrollbar-thumb { background: #E5E7EB; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #D1D5DB; }
     @media (max-width: 768px) {
-      .site-title { font-size: 1.85rem; }
-      .cards-grid { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); }
-      .stats-inner { gap: 1.5rem; padding: 1rem 1.5rem; }
+      .site-title { font-size: 1.875rem; }
+      .cards-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.625rem; }
+      .stats-inner { gap: 1.5rem; padding: 1rem 1.25rem; }
       .stat-num { font-size: 1.4rem; }
-      header { padding: 2.5rem 1rem 1.5rem; }
+      header { padding: 2.5rem 1rem 1.25rem; }
+      .site-tagline { font-size: 0.625rem; }
+      .site-subtitle { font-size: 0.8125rem; }
+      .card { padding: 0.75rem 0.875rem; gap: 0.625rem; }
+      .card-icon { width: 32px; height: 32px; font-size: 0.8125rem; }
+      .card-title { font-size: 0.8125rem; }
+      .card-badge { display: none; }
+      .back-to-top { width: 40px; height: 40px; bottom: 1rem; right: 1rem; }
+      .cat-tabs { padding: 0 1rem; gap: 0.25rem; margin-bottom: 1rem; }
+      .cat-tab { padding: 0.3125rem 0.875rem; font-size: 0.75rem; }
+      footer { padding: 2rem 1.5rem; }
     }
+
   </style>
+
+<!-- 数据统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?b1ab4e4d2e6ed748bb2d5c4abf617a2e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 </head>
 <body>
 
   <header>
     <div class="header-content">
-      <h1 class="site-title">网盘<span class="accent-char">集市</span> - 云盘资源导航站</h1>
-      <p class="site-subtitle">收录全网优质网盘搜索站与资源站，提供百度网盘、阿里云盘、夸克网盘等一站式导航</p>
-      <div class="search-container" role="search" aria-label="站内搜索">
-        <input type="text" class="search-box" id="searchInput" placeholder="搜索百度网盘、阿里云盘、夸克网盘等网站..." aria-label="搜索网盘网站" autocomplete="off">
-        <span class="search-icon" aria-hidden="true">&#128269;</span>
-      </div>
-      <p class="search-hint">按 / 键快速聚焦搜索框</p>
+      <p class="site-tagline">CLOUD DRIVE NAVIGATION</p>
+      <h1 class="site-title">网盘<span class="accent-char">集市</span></h1>
+      <p class="site-subtitle">精选 142 个网盘搜索站与资源站，覆盖百度、阿里、夸克、迅雷等主流云盘</p>
     </div>
     <div class="ad-row" aria-label="推广链接">
       <div class="ad-bar">
@@ -515,7 +454,7 @@ body {
       </div>
       <div class="ad-bar">
         <span class="ad-tag">扩容</span>
-        <a href="https://www.yuque.com/xbxbot/apk/gr3l12eh4it5wfhu?singleDoc#" target="_blank" rel="noopener">夸克扩容20TB</a>
+        <a href="https://www.yuque.com/xbxbot/apk/hbe9uzg0fvmvt02z?singleDoc#" target="_blank" rel="noopener">夸克扩容20TB</a>
         <span class="ad-go">&rarr;</span>
       </div>
     </div>
@@ -524,18 +463,8 @@ body {
   <div class="stats-bar" aria-label="网站统计数据">
     <div class="stats-inner">
       <div class="stat-item">
-        <div class="stat-num" id="statTotal">139</div>
+        <div class="stat-num" id="statTotal">132</div>
         <div class="stat-label">收录网站</div>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <div class="stat-num" id="statSearch">129</div>
-        <div class="stat-label">搜索站</div>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <div class="stat-num" id="statPlatform">8</div>
-        <div class="stat-label">网盘平台</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat-item">
@@ -554,562 +483,930 @@ body {
       <button class="cat-tab" data-filter="other">其他</button>
     </nav>
     <section class="cards-grid" id="cardsGrid" aria-label="资源导航列表">
-      <a class="card" role="listitem" href="https://kekesoso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="非常清爽的网盘资源搜索站，无需注册登录，直接搜索相关资源即可点开保存，还有随机推荐功能，挖掘各种宝藏资源" data-keywords="可可搜搜 网盘 搜索 资源 推荐 kekesoso">
-        <div class="card-icon i-search">&#127775;</div>
-        <div class="card-title">可可搜搜</div>
+      <a class="card" role="listitem" href="https://kekesoso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="非常清爽的网盘资源搜索站，无需注册登录，直接搜索相关资源即可点开保存，还有随机推荐功能，挖掘各种宝藏资源">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">可可搜搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
       </a>
-      <a class="card" role="listitem" href="https://www.gugeso.com" data-cat="baidu" target="_blank" rel="noopener" data-desc="综合性网盘搜索引擎，支持百度、阿里、夸克、天翼、115、PikPak、迅雷、123等十多个平台" data-keywords="谷哥网盘搜索 聚合 综合 百度 阿里 夸克 天翼 115 pikpak 迅雷 123">
-        <div class="card-icon i-search">&#128269;</div>
-        <div class="card-title">谷哥网盘搜索</div>
+      <a class="card" role="listitem" href="https://www.gugeso.com" data-cat="baidu" target="_blank" rel="noopener" data-desc="综合性网盘搜索引擎，支持百度、阿里、夸克、天翼、115、PikPak、迅雷、123等十多个平台">
+        <div class="card-icon cat-baidu"></div>
+        <div class="card-info">
+          <div class="card-title">谷哥网盘搜索</div>
+        </div>
+        <span class="card-badge cat-baidu">百度</span>
       </a>
-      <a class="card" role="listitem" href="https://www.pansearch.me/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="聚合型网盘资源搜索引擎，支持百度网盘、阿里云盘、夸克网盘等多平台一键搜索" data-keywords="pansearch 聚合 综合 百度 阿里 夸克">
-        <div class="card-icon i-search">&#127760;</div>
-        <div class="card-title">PanSearch</div>
+      <a class="card" role="listitem" href="https://www.pansearch.me/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="聚合型网盘资源搜索引擎，支持百度网盘、阿里云盘、夸克网盘等多平台一键搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">PanSearch</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
       </a>
 
-      <a class="card" role="listitem" href="https://www.esoua.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="支持百度网盘、阿里云盘、夸克云盘、迅雷云盘等多种网盘资源的综合搜索平台" data-keywords="爱搜 聚合 百度 阿里 夸克 迅雷">
-        <div class="card-icon i-search">&#128161;</div>
-        <div class="card-title">爱搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.kuai.so/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="聚合网盘资源搜索，支持百度、阿里、蓝奏云、天翼云盘、夸克、迅雷云盘" data-keywords="快盘搜 聚合 百度 阿里 夸克 天翼 蓝奏 迅雷">
-        <div class="card-icon i-search">&#9889;</div>
-        <div class="card-title">快盘搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.xiaomapan.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="百度网盘资源搜索工具，免费使用，搜索速度快，支持多种文件类型过滤" data-keywords="小马盘搜索 百度网盘 免费">
-        <div class="card-icon i-search">&#128014;</div>
-        <div class="card-title">小马盘搜索</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.pansoso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源聚合搜索引擎，搜索速度快，结果更新及时，覆盖多个网盘平台" data-keywords="盘搜搜 网盘 搜索 聚合">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">盘搜搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.alipan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="阿里巴巴旗下云存储服务，上传下载不限速，空间大，体验流畅" data-keywords="阿里云盘 官方 云盘 不限速">
-        <div class="card-icon i-aliyun">&#9729;</div>
-        <div class="card-title">阿里云盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://pan.baidu.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="国内最大的云存储平台，资源最丰富，支持在线预览和离线下载" data-keywords="百度网盘 官方 云存储 在线预览">
-        <div class="card-icon i-baidu">&#128190;</div>
-        <div class="card-title">百度网盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://pan.quark.cn/" data-cat="quark" target="_blank" rel="noopener" data-desc="夸克浏览器旗下云盘服务，普通用户即可享受较快的上传下载速率" data-keywords="夸克网盘 官方 快速 轻量">
-        <div class="card-icon i-quark">&#128640;</div>
-        <div class="card-title">夸克网盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://cloud.189.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="中国电信推出，整合AI图像识别、语音转文字等能力，跨终端同步" data-keywords="天翼云盘 中国电信 官方 AI">
-        <div class="card-icon i-ty">&#9729;</div>
-        <div class="card-title">天翼云盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.123pan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="新兴云存储平台，提供免费大空间存储，上传下载速度快" data-keywords="123云盘 官方 云存储">
-        <div class="card-icon i-123">&#128195;</div>
-        <div class="card-title">123云盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.lanzou.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="专注于小文件分享的云存储平台，软件工具文档分享首选，下载免登录" data-keywords="蓝奏云 小文件 免登录 软件 工具">
-        <div class="card-icon i-lanzou">&#128295;</div>
-        <div class="card-title">蓝奏云</div>
-      </a>
-      <a class="card" role="listitem" href="https://pan.xunlei.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="迅雷旗下云盘服务，支持离线下载和云播，影视资源体验优秀" data-keywords="迅雷云盘 官方 离线下载 云播">
-        <div class="card-icon i-xunlei">&#9889;</div>
-        <div class="card-title">迅雷云盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://mypikpak.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="支持磁力链接和种子文件离线下载的云盘工具，海外资源访问便捷" data-keywords="PikPak 磁力 离线下载">
-        <div class="card-icon i-pikpak">&#128640;</div>
-        <div class="card-title">PikPak</div>
-      </a>
-      <a class="card" role="listitem" href="https://drive.uc.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="UC旗下云存储服务，与阿里生态深度整合，支持大文件传输和在线预览" data-keywords="UC网盘 阿里 UC 云存储">
-        <div class="card-icon i-uc">&#9729;</div>
-        <div class="card-title">UC网盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://115.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="老牌云存储平台，以离线下载和大文件存储著称，资源保存稳定" data-keywords="115网盘 官方 大文件 离线">
-        <div class="card-icon i-tool">&#128274;</div>
-        <div class="card-title">115网盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.panjdzy.com/" data-cat="other" target="_blank" rel="noopener" data-desc="专注网盘影视资源分享，每日更新最新电影、美剧、日韩剧" data-keywords="网盘简单资源 影视 夸克 电影 电视剧">
-        <div class="card-icon i-movie">&#127916;</div>
-        <div class="card-title">网盘简单资源</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.pansearch.me/" data-cat="other" target="_blank" rel="noopener" data-desc="搜索全网影视资源，支持电影、电视剧、综艺等多种类型查找" data-keywords="pansearch 影视 电影 电视剧 搜索">
-        <div class="card-icon i-movie">&#127902;</div>
-        <div class="card-title">PanSearch 影视</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.pansearch.me/" data-cat="other" target="_blank" rel="noopener" data-desc="搜索全网电子书资源，涵盖小说、教材、专业书籍等各类图书" data-keywords="pansearch 电子书 书籍 小说 教材">
-        <div class="card-icon i-book">&#128218;</div>
-        <div class="card-title">PanSearch 书籍</div>
-      </a>
-      <a class="card" role="listitem" href="http://ct.vpan123.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索站，支持多平台资源搜索查找" data-keywords="vpan123 网盘 搜索">
-        <div class="card-icon i-search">&#128269;</div>
-        <div class="card-title">VPan123</div>
-      </a>
-      <a class="card" role="listitem" href="https://vdisk.weibo.com/wap/" data-cat="other" target="_blank" rel="noopener" data-desc="新浪微博旗下云存储服务，社交化文件分享" data-keywords="微盘 新浪 微博 云盘">
-        <div class="card-icon i-ty">&#127760;</div>
-        <div class="card-title">新浪微盘</div>
-      </a>
-      <a class="card" role="listitem" href="http://www.lanjuhua.com/" data-cat="other" target="_blank" rel="noopener" data-desc="网盘资源搜索站，支持蓝奏云等平台资源搜索" data-keywords="蓝菊花 网盘 搜索 蓝奏">
-        <div class="card-icon i-search">&#128293;</div>
-        <div class="card-title">蓝菊花</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.yunso.net/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="云搜 网盘 搜索">
-        <div class="card-icon i-search">&#128269;</div>
-        <div class="card-title">云搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.cuppaso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索站，界面简洁高效" data-keywords="cuppaso 网盘 搜索">
-        <div class="card-icon i-search">&#128161;</div>
-        <div class="card-title">CuppaSo</div>
-      </a>
-      <a class="card" role="listitem" href="https://aipanso.com/" data-cat="other" target="_blank" rel="noopener" data-desc="基于AI技术的阿里云盘资源搜索引擎" data-keywords="AI盘搜 阿里云盘 搜索">
-        <div class="card-icon i-aliyun">&#129302;</div>
-        <div class="card-title">AI盘搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.wanwangsou.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="万王搜 网盘 搜索">
-        <div class="card-icon i-search">&#128142;</div>
-        <div class="card-title">万王搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://ctfile.qinlili.bid/" data-cat="other" target="_blank" rel="noopener" data-desc="城通网盘资源搜索镜像站，方便查找城通网盘文件" data-keywords="ctfile 城通网盘 搜索">
-        <div class="card-icon i-soft">&#128196;</div>
-        <div class="card-title">CTFile 镜像</div>
-      </a>
-      <a class="card" role="listitem" href="https://link.gimhoy.com/" data-cat="other" target="_blank" rel="noopener" data-desc="网盘资源搜索与链接提取工具" data-keywords="gimhoy 网盘 搜索">
-        <div class="card-icon i-search">&#128279;</div>
-        <div class="card-title">Gimhoy Link</div>
-      </a>
-      <a class="card" role="listitem" href="https://xiongdipan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台资源搜索" data-keywords="兄弟盘 网盘 搜索">
-        <div class="card-icon i-search">&#129309;</div>
-        <div class="card-title">兄弟盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.sopandas.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="搜盘网盘资源搜索引擎，支持多平台搜索" data-keywords="sopandas 搜盘 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">SoPanDas</div>
-      </a>
-      <a class="card" role="listitem" href="http://youliaoso.com/panso" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索站，支持多种资源查找" data-keywords="优料搜 网盘 搜索">
-        <div class="card-icon i-search">&#128525;</div>
-        <div class="card-title">优料搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.xuesousou.net/" data-cat="other" target="_blank" rel="noopener" data-desc="专注学习资料的网盘资源搜索引擎，涵盖教材、课件等" data-keywords="学搜搜 网盘 学习 搜索">
-        <div class="card-icon i-book">&#128218;</div>
-        <div class="card-title">学搜搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.maoliyun.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，界面可爱简洁" data-keywords="猫哩云 网盘 搜索">
-        <div class="card-icon i-search">&#128049;</div>
-        <div class="card-title">猫哩云</div>
-      </a>
-      <a class="card" role="listitem" href="https://ssgo.app/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索应用，支持多平台搜索" data-keywords="ssgo 网盘 搜索">
-        <div class="card-icon i-search">&#128640;</div>
-        <div class="card-title">SSGo</div>
-      </a>
-      <a class="card" role="listitem" href="https://meow.tg/" data-cat="other" target="_blank" rel="noopener" data-desc="Telegram频道资源搜索引擎，查找电报分享的网盘资源" data-keywords="meow telegram 电报 搜索">
-        <div class="card-icon i-tool">&#128058;</div>
-        <div class="card-title">Meow TG</div>
-      </a>
-      <a class="card" role="listitem" href="https://telemetr.io/en/catalog/global" data-cat="other" target="_blank" rel="noopener" data-desc="Telegram频道全球目录，发现优质电报资源频道" data-keywords="telemetr telegram 频道 目录">
-        <div class="card-icon i-tool">&#127760;</div>
-        <div class="card-title">Telemetr</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.cuppaso.fun/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索站，支持多平台资源查找" data-keywords="cuppaso fun 网盘 搜索">
-        <div class="card-icon i-search">&#127926;</div>
-        <div class="card-title">CuppaSo Fun</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.pansoso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源聚合搜索引擎，搜索速度快，覆盖面广" data-keywords="盘搜搜 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">PanSoSo</div>
-      </a>
-      <a class="card" role="listitem" href="https://pan.funletu.com/#/s/141433.html" data-cat="yunpan" target="_blank" rel="noopener" data-desc="乐趣盘网盘资源搜索，支持多平台资源查找" data-keywords="乐趣盘 网盘 搜索">
-        <div class="card-icon i-search">&#127812;</div>
-        <div class="card-title">乐趣盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://pan.funletu.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="乐趣盘网盘资源搜索平台，支持多平台资源查找" data-keywords="funletu 乐趣盘 网盘">
-        <div class="card-icon i-search">&#127812;</div>
-        <div class="card-title">FunLetu</div>
-      </a>
-      <a class="card" role="listitem" href="https://soali.net/" data-cat="other" target="_blank" rel="noopener" data-desc="专注于阿里云盘资源的搜索引擎" data-keywords="搜阿里 阿里云盘 搜索">
-        <div class="card-icon i-aliyun">&#128269;</div>
-        <div class="card-title">搜阿里</div>
-      </a>
-      <a class="card" role="listitem" href="https://buyutu.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="不遇图 网盘 搜索">
-        <div class="card-icon i-search">&#128293;</div>
-        <div class="card-title">不遇图</div>
-      </a>
-      <a class="card" role="listitem" href="https://aliso.cc/" data-cat="other" target="_blank" rel="noopener" data-desc="专注于阿里云盘资源的搜索引擎" data-keywords="aliso 阿里云盘 搜索">
-        <div class="card-icon i-aliyun">&#128269;</div>
-        <div class="card-title">Aliso</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.xibuluo.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="西部落 网盘 搜索">
-        <div class="card-icon i-search">&#127969;</div>
-        <div class="card-title">西部落</div>
-      </a>
-      <a class="card" role="listitem" href="http://www.80kss.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源快速搜索引擎，搜索速度快" data-keywords="80kss 网盘 快速 搜索">
-        <div class="card-icon i-search">&#9889;</div>
-        <div class="card-title">80K搜搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://yunpan.baozouboy.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="云盘资源搜索引擎，支持多平台搜索" data-keywords="暴走少年 云盘 搜索">
-        <div class="card-icon i-search">&#128119;</div>
-        <div class="card-title">暴走少年</div>
-      </a>
-      <a class="card" role="listitem" href="http://axing.mulupan.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="木路盘网盘资源搜索引擎，支持多平台搜索" data-keywords="阿星 木路盘 网盘 搜索">
-        <div class="card-icon i-search">&#11088;</div>
-        <div class="card-title">阿星盘搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://pansousou.org/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="盘搜搜搜 网盘 搜索">
-        <div class="card-icon i-search">&#128269;</div>
-        <div class="card-title">盘搜搜搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://baipansou.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="白盘搜 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">白盘搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://pan123456.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="pan123456 网盘 搜索">
-        <div class="card-icon i-search">&#128274;</div>
-        <div class="card-title">Pan123456</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.pandashi8.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="盘大师8 网盘 搜索">
-        <div class="card-icon i-search">&#127942;</div>
-        <div class="card-title">盘大师8</div>
-      </a>
-      <a class="card" role="listitem" href="https://so.lzpanx.com/" data-cat="other" target="_blank" rel="noopener" data-desc="专注于蓝奏云资源的搜索引擎，搜索蓝奏云分享文件" data-keywords="蓝奏云搜 lzpanx 搜索">
-        <div class="card-icon i-lanzou">&#128269;</div>
-        <div class="card-title">蓝奏云搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.kuakuaso.com/" data-cat="quark" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="夸夸搜 网盘 搜索">
-        <div class="card-icon i-search">&#128077;</div>
-        <div class="card-title">夸夸搜</div>
-      </a>
-      <a class="card" role="listitem" href="http://www.liangyiniaoso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="两只鸟搜 网盘 搜索">
-        <div class="card-icon i-search">&#128038;</div>
-        <div class="card-title">两只鸟搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://pansou.org/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="盘搜 网盘 搜索 org">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">PanSou.org</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.baimapan.com/#/main/search?restype=1" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="白码盘 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">白码盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://wpzyss.top/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="网盘资源搜索 搜索">
-        <div class="card-icon i-search">&#128269;</div>
-        <div class="card-title">网盘资源搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.panlegepan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="盘了个盘 网盘 搜索">
-        <div class="card-icon i-search">&#127923;</div>
-        <div class="card-title">盘了个盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://masoso.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="码搜搜 网盘 搜索">
-        <div class="card-icon i-search">&#128187;</div>
-        <div class="card-title">码搜搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://repanso.net/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="repanso 网盘 搜索">
-        <div class="card-icon i-search">&#128260;</div>
-        <div class="card-title">RePanSo</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.lzpanx.com/" data-cat="other" target="_blank" rel="noopener" data-desc="蓝奏云资源导航与搜索站，收录蓝奏云分享链接" data-keywords="蓝奏盘 蓝奏云 lzpanx">
-        <div class="card-icon i-lanzou">&#128194;</div>
-        <div class="card-title">LZPanX</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.esoua.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="支持百度、阿里、夸克、迅雷等多种网盘资源的综合搜索平台" data-keywords="爱搜 esoua 网盘 搜索">
-        <div class="card-icon i-search">&#128161;</div>
-        <div class="card-title">ESouA</div>
-      </a>
-      <a class="card" role="listitem" href="http://baokuhe.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="宝库盒 网盘 搜索">
-        <div class="card-icon i-search">&#128230;</div>
-        <div class="card-title">宝库盒</div>
-      </a>
-      <a class="card" role="listitem" href="https://pan.l9.lc/r/2NSB4S" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源分享站，提供资源下载链接" data-keywords="l9 网盘 资源">
-        <div class="card-icon i-search">&#128269;</div>
-        <div class="card-title">L9网盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://panhub.shenzjd.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源聚合导航站，收录多平台资源" data-keywords="panhub 网盘 资源">
-        <div class="card-icon i-search">&#128230;</div>
-        <div class="card-title">PanHub</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.codelicence.cn/" data-cat="other" target="_blank" rel="noopener" data-desc="代码与软件资源网盘分享站" data-keywords="codelicence 代码 网盘">
-        <div class="card-icon i-soft">&#128187;</div>
-        <div class="card-title">CodeLicence</div>
-      </a>
-      <a class="card" role="listitem" href="https://panku8.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="盘库8 网盘 搜索">
-        <div class="card-icon i-search">&#128230;</div>
-        <div class="card-title">盘库8</div>
-      </a>
-      <a class="card" role="listitem" href="https://so1st.com/#/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="so1st 第一搜 网盘">
-        <div class="card-icon i-search">&#127941;</div>
-        <div class="card-title">So1st</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.pansouya.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索" data-keywords="盘搜呀 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">盘搜呀</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.ruike1.com/forum-51-1.html" data-cat="other" target="_blank" rel="noopener" data-desc="睿客网盘资源分享论坛，提供各类网盘资源交流与分享，资源丰富" data-keywords="睿客网 网盘 论坛 资源">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">睿客网</div>
-      </a>
-      <a class="card" role="listitem" href="https://kuake.pan123456.com/" data-cat="quark" target="_blank" rel="noopener" data-desc="夸克网盘资源搜索站，专注夸克网盘分享链接查找，资源更新快" data-keywords="夸克盘123 网盘 搜索">
-        <div class="card-icon i-quark">&#9889;</div>
-        <div class="card-title">夸克盘123</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.panjdzy.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘经典资源搜索站，收录优质网盘资源分享，覆盖影视软件书籍" data-keywords="盘经典 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">盘经典</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.sziyuan.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="S资源网，提供网盘资源搜索与分享服务，资源种类丰富" data-keywords="S资源 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">S资源</div>
-      </a>
-      <a class="card" role="listitem" href="https://suenen.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="搜恩网盘资源搜索引擎，搜索速度快，结果精准，界面简洁" data-keywords="搜恩网 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">搜恩网</div>
-      </a>
-      <a class="card" role="listitem" href="https://kuakes.com/" data-cat="quark" target="_blank" rel="noopener" data-desc="夸克网盘资源搜索引擎，专注夸克网盘资源查找，搜索速度快" data-keywords="夸克搜 网盘 搜索">
-        <div class="card-icon i-quark">&#9889;</div>
-        <div class="card-title">夸克搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.91panta.cn/index" data-cat="yunpan" target="_blank" rel="noopener" data-desc="91盘他网盘资源搜索引擎，支持多平台资源搜索，结果精准" data-keywords="91盘他 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">91盘他</div>
-      </a>
-      <a class="card" role="listitem" href="https://pan.club/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="盘俱乐部，网盘资源聚合搜索与分享平台，收录多平台资源" data-keywords="盘Club 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">盘Club</div>
-      </a>
-      <a class="card" role="listitem" href="https://quark.pan.club/" data-cat="quark" target="_blank" rel="noopener" data-desc="夸克盘俱乐部，专注夸克网盘资源搜索与分享，夸克资源一站式查找" data-keywords="夸克盘Club 网盘 搜索">
-        <div class="card-icon i-quark">&#9889;</div>
-        <div class="card-title">夸克盘Club</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.wpzyk.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索站，支持多平台资源搜索，资源丰富更新快" data-keywords="wpzyk 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">wpzyk</div>
-      </a>
-      <a class="card" role="listitem" href="https://aliyunpan1.com/" data-cat="other" target="_blank" rel="noopener" data-desc="阿里云盘资源分享站，收录阿里云盘优质资源，资源种类丰富" data-keywords="aliyunpan1 阿里云盘 资源">
-        <div class="card-icon i-aliyun">&#9729;</div>
-        <div class="card-title">阿里云盘1</div>
-      </a>
-      <a class="card" role="listitem" href="https://pan.qianfan.app/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="千帆网盘网盘资源搜索站" data-keywords="千帆网盘 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">千帆网盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://feiyu100.cn/home" data-cat="yunpan" target="_blank" rel="noopener" data-desc="飞鱼100网盘资源搜索站" data-keywords="飞鱼100 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">飞鱼100</div>
-      </a>
-      <a class="card" role="listitem" href="https://pan.ccof.cc/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="CCOF盘搜网盘资源搜索站" data-keywords="CCOF盘搜 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">CCOF盘搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.sssoou.com/" data-cat="other" target="_blank" rel="noopener" data-desc="SSSooU网盘资源搜索站" data-keywords="SSSooU 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">SSSooU</div>
-      </a>
-      <a class="card" role="listitem" href="https://wanyueshuwu.com/" data-cat="other" target="_blank" rel="noopener" data-desc="万悦书屋网盘资源搜索站" data-keywords="万悦书屋 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">万悦书屋</div>
-      </a>
-      <a class="card" role="listitem" href="https://pan.0eso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="0Eso盘搜网盘资源搜索站" data-keywords="0Eso盘搜 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">0Eso盘搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.aksou.cc/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="AK搜网盘资源搜索站" data-keywords="AK搜 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">AK搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://pansou.icloudnative.io/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="PanSou Cloud网盘资源搜索站" data-keywords="PanSou Cloud 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">PanSou Cloud</div>
-      </a>
-      <a class="card" role="listitem" href="https://alipansou.com/" data-cat="other" target="_blank" rel="noopener" data-desc="AlipanSou网盘资源搜索站" data-keywords="AlipanSou 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">AlipanSou</div>
-      </a>
-      <a class="card" role="listitem" href="https://panso.pro/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="PanSo.pro网盘资源搜索站" data-keywords="PanSo.pro 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">PanSo.pro</div>
-      </a>
-      <a class="card" role="listitem" href="https://s.6miu.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="6Miu搜网盘资源搜索站" data-keywords="6Miu搜 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">6Miu搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.esoua.com/?ref=www.zjnav.com" data-cat="yunpan" target="_blank" rel="noopener" data-desc="ESouA镜像网盘资源搜索站" data-keywords="ESouA镜像 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">ESouA镜像</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.chaonengso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="超能搜网盘资源搜索站" data-keywords="超能搜 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">超能搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://aipanso.com/?p=baidu" data-cat="other" target="_blank" rel="noopener" data-desc="AI盘搜百度网盘资源搜索站" data-keywords="AI盘搜百度 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">AI盘搜百度</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.wnsearch.top/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="万能搜网盘资源搜索站" data-keywords="万能搜 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">万能搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.yunpanziyuan.xyz/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="云盘资源网盘资源搜索站" data-keywords="云盘资源 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">云盘资源</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.so1st.com/#/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="So1st镜像网盘资源搜索站" data-keywords="So1st镜像 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">So1st镜像</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.xiongdipan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="兄弟盘网盘资源搜索站" data-keywords="兄弟盘 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">兄弟盘</div>
-      </a>
-      <a class="card" role="listitem" href="http://www.jisoupan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="疾搜盘网盘资源搜索站" data-keywords="疾搜盘 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">疾搜盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.fastsoso.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="FastSoso网盘资源搜索站" data-keywords="FastSoso 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">FastSoso</div>
-      </a>
-      <a class="card" role="listitem" href="http://m.sobaidupan.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="搜百度盘网盘资源搜索站" data-keywords="搜百度盘 网盘 搜索">
-        <div class="card-icon i-baidu">&#128269;</div>
-        <div class="card-title">搜百度盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://gobaidugle.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="GoBaiDuGle网盘资源搜索站" data-keywords="GoBaiDuGle 网盘 搜索">
-        <div class="card-icon i-baidu">&#128269;</div>
-        <div class="card-title">GoBaiDuGle</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.lzpan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="LZ盘网盘资源搜索站" data-keywords="LZ盘 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">LZ盘</div>
-      </a>
-      <a class="card" role="listitem" href="http://m.aiyoweia.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="哎哟喂网盘资源搜索站" data-keywords="哎哟喂 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">哎哟喂</div>
-      </a>
-      <a class="card" role="listitem" href="http://m.sodu123.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="Sodu123网盘资源搜索站" data-keywords="Sodu123 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">Sodu123</div>
-      </a>
-      <a class="card" role="listitem" href="http://www.panmeme.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="盘么么网盘资源搜索站" data-keywords="盘么么 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">盘么么</div>
-      </a>
-      <a class="card" role="listitem" href="http://m.51caichang.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="51菜场网盘资源搜索站" data-keywords="51菜场 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">51菜场</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.kolsou.com/?hao.su" data-cat="yunpan" target="_blank" rel="noopener" data-desc="Kol搜网盘资源搜索站" data-keywords="Kol搜 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">Kol搜</div>
-      </a>
-      <a class="card" role="listitem" href="http://www.repanso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="RePanSo网盘资源搜索站" data-keywords="RePanSo 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">RePanSo</div>
-      </a>
-      <a class="card" role="listitem" href="http://www.xibianyun.com/wp/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="西边云网盘资源搜索站" data-keywords="西边云 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">西边云</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.wowenda.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="问鼎答网盘资源搜索站" data-keywords="问鼎答 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">问鼎答</div>
-      </a>
-      <a class="card" role="listitem" href="http://www.aiyoweia.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="哎哟喂网盘资源搜索站" data-keywords="哎哟喂 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">哎哟喂</div>
-      </a>
-      <a class="card" role="listitem" href="https://share.uejoy.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="UeJoy网盘资源搜索站" data-keywords="UeJoy 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">UeJoy</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.sosoyunpan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="搜搜云盘网盘资源搜索站" data-keywords="搜搜云盘 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">搜搜云盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.xssousou.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="XSS搜搜网盘资源搜索站" data-keywords="XSS搜搜 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">XSS搜搜</div>
-      </a>
-      <a class="card" role="listitem" href="http://www.vpanso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="V盘搜网盘资源搜索站" data-keywords="V盘搜 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">V盘搜</div>
-      </a>
-      <a class="card" role="listitem" href="http://www.baiduyunsousou.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="百度云搜搜网盘资源搜索站" data-keywords="百度云搜搜 网盘 搜索">
-        <div class="card-icon i-baidu">&#128269;</div>
-        <div class="card-title">百度云搜搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://lzpan.com/" data-cat="other" target="_blank" rel="noopener" data-desc="蓝奏盘网盘资源搜索站" data-keywords="蓝奏盘 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">蓝奏盘</div>
-      </a>
-      <a class="card" role="listitem" href="http://www.zhaoyunpan.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="找云盘网盘资源搜索站" data-keywords="找云盘 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">找云盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://tool.lu/pansou/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="Tool.lu网盘资源搜索站" data-keywords="Tool.lu 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">Tool.lu</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.pan131.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="盘131网盘资源搜索站" data-keywords="盘131 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">盘131</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.soyunpan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="搜云盘网盘资源搜索站" data-keywords="搜云盘 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">搜云盘</div>
-      </a>
-      <a class="card" role="listitem" href="http://www.olecn.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="欧乐搜网盘资源搜索站" data-keywords="欧乐搜 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">欧乐搜</div>
-      </a>
-      <a class="card" role="listitem" href="http://baiduyun.6miu.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="百度6Miu网盘资源搜索站" data-keywords="百度6Miu 网盘 搜索">
-        <div class="card-icon i-baidu">&#128269;</div>
-        <div class="card-title">百度6Miu</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.h2ero.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="H2ero网盘资源搜索站" data-keywords="H2ero 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">H2ero</div>
-      </a>
-      <a class="card" role="listitem" href="http://www.pan58.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="盘58网盘资源搜索站" data-keywords="盘58 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">盘58</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.xiaokesoso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="小可搜搜网盘资源搜索站" data-keywords="小可搜搜 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">小可搜搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.xiaomapan.com/#/" data-cat="baidu" target="_blank" rel="noopener" data-desc="小马盘网盘资源搜索站" data-keywords="小马盘 网盘 搜索">
-        <div class="card-icon i-baidu">&#128269;</div>
-        <div class="card-title">小马盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.sopandas.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="SoPanDas网盘资源搜索站" data-keywords="SoPanDas 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">SoPanDas</div>
-      </a>
-      <a class="card" role="listitem" href="https://ujuso.com/#/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="UJu搜网盘资源搜索站" data-keywords="UJu搜 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">UJu搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.xuebapan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="学霸盘网盘资源搜索站" data-keywords="学霸盘 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">学霸盘</div>
-      </a>
-      <a class="card" role="listitem" href="https://feiyu100.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="飞鱼100网盘资源搜索站" data-keywords="飞鱼100 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">飞鱼100</div>
-      </a>
-      <a class="card" role="listitem" href="https://mengso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="萌搜网盘资源搜索站" data-keywords="萌搜 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">萌搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.dashengpan.com/#/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="大圣盘网盘资源搜索站" data-keywords="大圣盘 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">大圣盘</div>
-      </a>
-      <a class="card" role="listitem" href="http://www.yunpz.net/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="云盘站网盘资源搜索站" data-keywords="云盘站 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">云盘站</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.xiaoso.net/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="小搜网网盘资源搜索站" data-keywords="小搜网 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">小搜网</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.kolsou.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="Kol搜网盘资源搜索站" data-keywords="Kol搜 网盘 搜索">
-        <div class="card-icon i-search">&#128270;</div>
-        <div class="card-title">Kol搜</div>
-      </a>
-      <a class="card" role="listitem" href="https://www.sobaidupan.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="搜百度盘网盘资源搜索站" data-keywords="搜百度盘 网盘 搜索">
-        <div class="card-icon i-baidu">&#128269;</div>
-        <div class="card-title">搜百度盘</div>
+      <a class="card" role="listitem" href="https://www.esoua.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="支持百度网盘、阿里云盘、夸克云盘、迅雷云盘等多种网盘资源的综合搜索平台">
+        <div class="card-icon cat-baidu"></div>
+        <div class="card-info">
+          <div class="card-title">爱搜</div>
+        </div>
+        <span class="card-badge cat-baidu">百度</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.kuai.so/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="聚合网盘资源搜索，支持百度、阿里、蓝奏云、天翼云盘、夸克、迅雷云盘">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">快盘搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.xiaomapan.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="百度网盘资源搜索工具，免费使用，搜索速度快，支持多种文件类型过滤">
+        <div class="card-icon cat-baidu"></div>
+        <div class="card-info">
+          <div class="card-title">小马盘搜索</div>
+        </div>
+        <span class="card-badge cat-baidu">百度</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.pansoso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源聚合搜索引擎，搜索速度快，结果更新及时，覆盖多个网盘平台">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">盘搜搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.panjdzy.com/" data-cat="other" target="_blank" rel="noopener" data-desc="专注网盘影视资源分享，每日更新最新电影、美剧、日韩剧">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">网盘简单资源</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.pansearch.me/" data-cat="other" target="_blank" rel="noopener" data-desc="搜索全网影视资源，支持电影、电视剧、综艺等多种类型查找">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">PanSearch 影视</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.pansearch.me/" data-cat="other" target="_blank" rel="noopener" data-desc="搜索全网电子书资源，涵盖小说、教材、专业书籍等各类图书">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">PanSearch 书籍</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="http://ct.vpan123.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索站，支持多平台资源搜索查找">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">VPan123</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://vdisk.weibo.com/wap/" data-cat="other" target="_blank" rel="noopener" data-desc="新浪微博旗下云存储服务，社交化文件分享">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">新浪微盘</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="http://www.lanjuhua.com/" data-cat="other" target="_blank" rel="noopener" data-desc="网盘资源搜索站，支持蓝奏云等平台资源搜索">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">蓝菊花</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.yunso.net/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">云搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.cuppaso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索站，界面简洁高效">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">CuppaSo</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://aipanso.com/" data-cat="other" target="_blank" rel="noopener" data-desc="基于AI技术的阿里云盘资源搜索引擎">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">AI盘搜</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.wanwangsou.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">万王搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://ctfile.qinlili.bid/" data-cat="other" target="_blank" rel="noopener" data-desc="城通网盘资源搜索镜像站，方便查找城通网盘文件">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">CTFile 镜像</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://link.gimhoy.com/" data-cat="other" target="_blank" rel="noopener" data-desc="网盘资源搜索与链接提取工具">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">Gimhoy Link</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://xiongdipan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台资源搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">兄弟盘</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.sopandas.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="搜盘网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">SoPanDas</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://youliaoso.com/panso" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索站，支持多种资源查找">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">优料搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.xuesousou.net/" data-cat="other" target="_blank" rel="noopener" data-desc="专注学习资料的网盘资源搜索引擎，涵盖教材、课件等">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">学搜搜</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.maoliyun.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，界面可爱简洁">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">猫哩云</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://ssgo.app/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索应用，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">SSGo</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://meow.tg/" data-cat="other" target="_blank" rel="noopener" data-desc="Telegram频道资源搜索引擎，查找电报分享的网盘资源">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">Meow TG</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://telemetr.io/en/catalog/global" data-cat="other" target="_blank" rel="noopener" data-desc="Telegram频道全球目录，发现优质电报资源频道">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">Telemetr</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.cuppaso.fun/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索站，支持多平台资源查找">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">CuppaSo Fun</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.pansoso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源聚合搜索引擎，搜索速度快，覆盖面广">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">PanSoSo</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://pan.funletu.com/#/s/141433.html" data-cat="yunpan" target="_blank" rel="noopener" data-desc="乐趣盘网盘资源搜索，支持多平台资源查找">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">乐趣盘</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://pan.funletu.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="乐趣盘网盘资源搜索平台，支持多平台资源查找">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">FunLetu</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://soali.net/" data-cat="other" target="_blank" rel="noopener" data-desc="专注于阿里云盘资源的搜索引擎">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">搜阿里</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://buyutu.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">不遇图</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://aliso.cc/" data-cat="other" target="_blank" rel="noopener" data-desc="专注于阿里云盘资源的搜索引擎">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">Aliso</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.xibuluo.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">西部落</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://www.80kss.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源快速搜索引擎，搜索速度快">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">80K搜搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://yunpan.baozouboy.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="云盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">暴走少年</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://axing.mulupan.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="木路盘网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">阿星盘搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://pansousou.org/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">盘搜搜搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://baipansou.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">白盘搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://pan123456.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">Pan123456</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.pandashi8.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">盘大师8</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://so.lzpanx.com/" data-cat="other" target="_blank" rel="noopener" data-desc="专注于蓝奏云资源的搜索引擎，搜索蓝奏云分享文件">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">蓝奏云搜</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.kuakuaso.com/" data-cat="quark" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-quark"></div>
+        <div class="card-info">
+          <div class="card-title">夸夸搜</div>
+        </div>
+        <span class="card-badge cat-quark">夸克</span>
+      </a>
+      <a class="card" role="listitem" href="http://www.liangyiniaoso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">两只鸟搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://pansou.org/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">PanSou.org</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.baimapan.com/#/main/search?restype=1" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">白码盘</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://wpzyss.top/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">网盘资源搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.panlegepan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">盘了个盘</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://masoso.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">码搜搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://repanso.net/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">RePanSo</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.lzpanx.com/" data-cat="other" target="_blank" rel="noopener" data-desc="蓝奏云资源导航与搜索站，收录蓝奏云分享链接">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">LZPanX</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.esoua.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="支持百度、阿里、夸克、迅雷等多种网盘资源的综合搜索平台">
+        <div class="card-icon cat-baidu"></div>
+        <div class="card-info">
+          <div class="card-title">ESouA</div>
+        </div>
+        <span class="card-badge cat-baidu">百度</span>
+      </a>
+      <a class="card" role="listitem" href="http://baokuhe.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">宝库盒</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://pan.l9.lc/r/2NSB4S" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源分享站，提供资源下载链接">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">L9网盘</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://panhub.shenzjd.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源聚合导航站，收录多平台资源">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">PanHub</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.codelicence.cn/" data-cat="other" target="_blank" rel="noopener" data-desc="代码与软件资源网盘分享站">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">CodeLicence</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://panku8.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">盘库8</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://so1st.com/#/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">So1st</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.pansouya.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索引擎，支持多平台搜索">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">盘搜呀</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.ruike1.com/forum-51-1.html" data-cat="other" target="_blank" rel="noopener" data-desc="睿客网盘资源分享论坛，提供各类网盘资源交流与分享，资源丰富">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">睿客网</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://kuake.pan123456.com/" data-cat="quark" target="_blank" rel="noopener" data-desc="夸克网盘资源搜索站，专注夸克网盘分享链接查找，资源更新快">
+        <div class="card-icon cat-quark"></div>
+        <div class="card-info">
+          <div class="card-title">夸克盘123</div>
+        </div>
+        <span class="card-badge cat-quark">夸克</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.panjdzy.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘经典资源搜索站，收录优质网盘资源分享，覆盖影视软件书籍">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">盘经典</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.sziyuan.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="S资源网，提供网盘资源搜索与分享服务，资源种类丰富">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">S资源</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://suenen.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="搜恩网盘资源搜索引擎，搜索速度快，结果精准，界面简洁">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">搜恩网</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://kuakes.com/" data-cat="quark" target="_blank" rel="noopener" data-desc="夸克网盘资源搜索引擎，专注夸克网盘资源查找，搜索速度快">
+        <div class="card-icon cat-quark"></div>
+        <div class="card-info">
+          <div class="card-title">夸克搜</div>
+        </div>
+        <span class="card-badge cat-quark">夸克</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.91panta.cn/index" data-cat="yunpan" target="_blank" rel="noopener" data-desc="91盘他网盘资源搜索引擎，支持多平台资源搜索，结果精准">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">91盘他</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://pan.club/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="盘俱乐部，网盘资源聚合搜索与分享平台，收录多平台资源">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">盘Club</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://quark.pan.club/" data-cat="quark" target="_blank" rel="noopener" data-desc="夸克盘俱乐部，专注夸克网盘资源搜索与分享，夸克资源一站式查找">
+        <div class="card-icon cat-quark"></div>
+        <div class="card-info">
+          <div class="card-title">夸克盘Club</div>
+        </div>
+        <span class="card-badge cat-quark">夸克</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.wpzyk.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="网盘资源搜索站，支持多平台资源搜索，资源丰富更新快">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">wpzyk</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://aliyunpan1.com/" data-cat="other" target="_blank" rel="noopener" data-desc="阿里云盘资源分享站，收录阿里云盘优质资源，资源种类丰富">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">阿里云盘1</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://pan.qianfan.app/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="千帆网盘网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">千帆网盘</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://feiyu100.cn/home" data-cat="yunpan" target="_blank" rel="noopener" data-desc="飞鱼100网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">飞鱼100</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://pan.ccof.cc/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="CCOF盘搜网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">CCOF盘搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.sssoou.com/" data-cat="other" target="_blank" rel="noopener" data-desc="SSSooU网盘资源搜索站">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">SSSooU</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://wanyueshuwu.com/" data-cat="other" target="_blank" rel="noopener" data-desc="万悦书屋网盘资源搜索站">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">万悦书屋</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://pan.0eso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="0Eso盘搜网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">0Eso盘搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.aksou.cc/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="AK搜网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">AK搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://pansou.icloudnative.io/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="PanSou Cloud网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">PanSou Cloud</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://alipansou.com/" data-cat="other" target="_blank" rel="noopener" data-desc="AlipanSou网盘资源搜索站">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">AlipanSou</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://panso.pro/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="PanSo.pro网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">PanSo.pro</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://s.6miu.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="6Miu搜网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">6Miu搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.esoua.com/?ref=www.zjnav.com" data-cat="yunpan" target="_blank" rel="noopener" data-desc="ESouA镜像网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">ESouA镜像</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.chaonengso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="超能搜网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">超能搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://aipanso.com/?p=baidu" data-cat="other" target="_blank" rel="noopener" data-desc="AI盘搜百度网盘资源搜索站">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">AI盘搜百度</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.wnsearch.top/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="万能搜网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">万能搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.yunpanziyuan.xyz/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="云盘资源网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">云盘资源</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.so1st.com/#/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="So1st镜像网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">So1st镜像</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.xiongdipan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="兄弟盘网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">兄弟盘</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://www.jisoupan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="疾搜盘网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">疾搜盘</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.fastsoso.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="FastSoso网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">FastSoso</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://m.sobaidupan.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="搜百度盘网盘资源搜索站">
+        <div class="card-icon cat-baidu"></div>
+        <div class="card-info">
+          <div class="card-title">搜百度盘</div>
+        </div>
+        <span class="card-badge cat-baidu">百度</span>
+      </a>
+      <a class="card" role="listitem" href="https://gobaidugle.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="GoBaiDuGle网盘资源搜索站">
+        <div class="card-icon cat-baidu"></div>
+        <div class="card-info">
+          <div class="card-title">GoBaiDuGle</div>
+        </div>
+        <span class="card-badge cat-baidu">百度</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.lzpan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="LZ盘网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">LZ盘</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://m.aiyoweia.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="哎哟喂网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">哎哟喂</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://m.sodu123.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="Sodu123网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">Sodu123</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://www.panmeme.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="盘么么网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">盘么么</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://m.51caichang.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="51菜场网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">51菜场</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.kolsou.com/?hao.su" data-cat="yunpan" target="_blank" rel="noopener" data-desc="Kol搜网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">Kol搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://www.repanso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="RePanSo网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">RePanSo</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://www.xibianyun.com/wp/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="西边云网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">西边云</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.wowenda.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="问鼎答网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">问鼎答</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://www.aiyoweia.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="哎哟喂网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">哎哟喂</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://share.uejoy.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="UeJoy网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">UeJoy</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.sosoyunpan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="搜搜云盘网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">搜搜云盘</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.xssousou.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="XSS搜搜网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">XSS搜搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://www.vpanso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="V盘搜网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">V盘搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://www.baiduyunsousou.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="百度云搜搜网盘资源搜索站">
+        <div class="card-icon cat-baidu"></div>
+        <div class="card-info">
+          <div class="card-title">百度云搜搜</div>
+        </div>
+        <span class="card-badge cat-baidu">百度</span>
+      </a>
+      <a class="card" role="listitem" href="https://lzpan.com/" data-cat="other" target="_blank" rel="noopener" data-desc="蓝奏盘网盘资源搜索站">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">蓝奏盘</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
+      </a>
+      <a class="card" role="listitem" href="http://www.zhaoyunpan.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="找云盘网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">找云盘</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://tool.lu/pansou/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="Tool.lu网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">Tool.lu</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.pan131.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="盘131网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">盘131</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.soyunpan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="搜云盘网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">搜云盘</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://www.olecn.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="欧乐搜网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">欧乐搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://baiduyun.6miu.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="百度6Miu网盘资源搜索站">
+        <div class="card-icon cat-baidu"></div>
+        <div class="card-info">
+          <div class="card-title">百度6Miu</div>
+        </div>
+        <span class="card-badge cat-baidu">百度</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.h2ero.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="H2ero网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">H2ero</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://www.pan58.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="盘58网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">盘58</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.xiaokesoso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="小可搜搜网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">小可搜搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.xiaomapan.com/#/" data-cat="baidu" target="_blank" rel="noopener" data-desc="小马盘网盘资源搜索站">
+        <div class="card-icon cat-baidu"></div>
+        <div class="card-info">
+          <div class="card-title">小马盘</div>
+        </div>
+        <span class="card-badge cat-baidu">百度</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.sopandas.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="SoPanDas网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">SoPanDas</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://ujuso.com/#/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="UJu搜网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">UJu搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.xuebapan.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="学霸盘网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">学霸盘</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://feiyu100.cn/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="飞鱼100网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">飞鱼100</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://mengso.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="萌搜网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">萌搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.dashengpan.com/#/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="大圣盘网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">大圣盘</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="http://www.yunpz.net/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="云盘站网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">云盘站</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.xiaoso.net/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="小搜网网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">小搜网</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.kolsou.com/" data-cat="yunpan" target="_blank" rel="noopener" data-desc="Kol搜网盘资源搜索站">
+        <div class="card-icon cat-yunpan"></div>
+        <div class="card-info">
+          <div class="card-title">Kol搜</div>
+        </div>
+        <span class="card-badge cat-yunpan">综合</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.sobaidupan.com/" data-cat="baidu" target="_blank" rel="noopener" data-desc="搜百度盘网盘资源搜索站">
+        <div class="card-icon cat-baidu"></div>
+        <div class="card-info">
+          <div class="card-title">搜百度盘</div>
+        </div>
+        <span class="card-badge cat-baidu">百度</span>
+      </a>
+      <a class="card" role="listitem" href="https://pansou.de/" data-cat="quark" target="_blank" rel="noopener" data-desc="纯净的夸克网盘资源搜索引擎">
+        <div class="card-icon cat-quark"></div>
+        <div class="card-info">
+          <div class="card-title">盘搜得</div>
+        </div>
+        <span class="card-badge cat-quark">夸克</span>
+      </a>
+      <a class="card" role="listitem" href="https://kkso.net/" data-cat="quark" target="_blank" rel="noopener" data-desc="免费无广告的夸克百度网盘搜索">
+        <div class="card-icon cat-quark"></div>
+        <div class="card-info">
+          <div class="card-title">KK网盘搜</div>
+        </div>
+        <span class="card-badge cat-quark">夸克</span>
+      </a>
+      <a class="card" role="listitem" href="https://www.zhuiju.us/" data-cat="other" target="_blank" rel="noopener" data-desc="国内外热门影视网盘资源搜索">
+        <div class="card-icon cat-other"></div>
+        <div class="card-info">
+          <div class="card-title">追剧吧</div>
+        </div>
+        <span class="card-badge cat-other">其他</span>
       </a>
     </section>
   </main>
@@ -1123,14 +1420,14 @@ body {
     <p>网盘集市 - 云盘资源导航站 | 本站仅提供导航服务，资源版权归原平台所有</p>
     <p style="margin-top: 0.3rem;">请合理使用网盘资源，遵守相关法律法规</p>
     <div class="footer-links">
-      <a href="mailto:2191966697@qq.com?subject=%E8%81%94%E7%B3%BB%E7%AB%99%E9%95%BF%2F%E6%8F%90%E4%BA%A4%E6%96%B0%E7%AB%99">
-        <span class="link-icon">&#9993;</span>联系站长
+      <a href="javascript:void(0)" onclick="navigator.clipboard.writeText('2191966697@qq.com');this.querySelector('.link-text').textContent='已复制邮箱';setTimeout(function(){var e=document.querySelectorAll('.footer-links a .link-text');e[0].textContent='联系站长';},2000);">
+        <span class="link-icon">&#9993;</span><span class="link-text">联系站长</span>
       </a>
-      <a href="mailto:2191966697@qq.com?subject=%E6%8F%90%E4%BA%A4%E6%96%B0%E7%AB%99">
-        <span class="link-icon">&#10133;</span>提交新站
+      <a href="javascript:void(0)" onclick="navigator.clipboard.writeText('2191966697@qq.com');this.querySelector('.link-text').textContent='已复制邮箱';setTimeout(function(){var e=document.querySelectorAll('.footer-links a .link-text');e[1].textContent='提交新站';},2000);">
+        <span class="link-icon">&#10133;</span><span class="link-text">提交新站</span>
       </a>
-      <a href="mailto:2191966697@qq.com?subject=%E6%8A%A5%E5%A4%87%E5%A4%B1%E6%95%88%E7%BD%91%E5%9D%80">
-        <span class="link-icon">&#9888;</span>报备失效
+      <a href="javascript:void(0)" onclick="navigator.clipboard.writeText('2191966697@qq.com');this.querySelector('.link-text').textContent='已复制邮箱';setTimeout(function(){var e=document.querySelectorAll('.footer-links a .link-text');e[2].textContent='报备失效';},2000);">
+        <span class="link-icon">&#9888;</span><span class="link-text">报备失效</span>
       </a>
     </div>
   </footer>
@@ -1140,22 +1437,24 @@ body {
   <script>
     (function() {
       'use strict';
-      var searchInput = document.getElementById('searchInput');
       var grid = document.getElementById('cardsGrid');
       var cards = grid.children;
       var noResult = document.getElementById('noResult');
       var backToTop = document.getElementById('backToTop');
       var len = cards.length;
-
-      // Precompute search index once
-      var idx = new Array(len);
+      var catMap = new Array(len);
       for (var i = 0; i < len; i++) {
-        idx[i] = ((cards[i].getAttribute('data-keywords') || '') + ' ' +
-          cards[i].querySelector('.card-title').textContent).toLowerCase();
-        cards[i].style.animationDelay = (i * 20) + 'ms';
+        var card = cards[i];
+        catMap[i] = card.getAttribute('data-cat') || 'other';
+        var titleEl = card.querySelector('.card-title');
+        var iconEl = card.querySelector('.card-icon');
+        if (titleEl && iconEl) {
+          var name = titleEl.textContent.trim();
+          iconEl.textContent = name.charAt(0).toUpperCase() || '?';
+          iconEl.className = 'card-icon';
+        }
+        card.style.animationDelay = Math.min(i * 12, 600) + 'ms';
       }
-
-      // Category tabs
       var activeCat = 'all';
       var tabs = document.querySelectorAll('.cat-tab');
       tabs.forEach(function(tab) {
@@ -1163,103 +1462,71 @@ body {
           tabs.forEach(function(t) { t.classList.remove('active'); });
           tab.classList.add('active');
           activeCat = tab.getAttribute('data-filter');
-          var q = searchInput.value.trim().toLowerCase(), v = 0;
+          var v = 0;
           for (var i = 0; i < len; i++) {
-            var catOk = activeCat === 'all' || cards[i].getAttribute('data-cat') === activeCat;
-            var searchOk = !q || idx[i].includes(q);
-            cards[i].style.display = (catOk && searchOk) ? '' : 'none';
-            if (catOk && searchOk) v++;
+            var show = activeCat === 'all' || catMap[i] === activeCat;
+            cards[i].style.display = show ? '' : 'none';
+            if (show) v++;
           }
           noResult.style.display = (v === 0) ? '' : 'none';
         });
       });
-
-      // Single shared tooltip (avoid 99 DOM creates on load)
       var tip = document.createElement('div');
       tip.className = 'tooltip';
+      tip.style.visibility = 'hidden';
+      tip.style.opacity = '0';
       document.body.appendChild(tip);
-      var cur = null;
+      var tipMeasured = false;
 
-      // Event delegation: mouse hover shows tooltip (always)
       grid.addEventListener('mouseover', function(e) {
         var c = e.target.closest('.card');
         if (!c) return;
-        cur = c;
         tip.textContent = c.getAttribute('data-desc') || '';
-        tip.style.visibility = 'hidden';
-        tip.style.opacity = '1';
-        var cr = c.getBoundingClientRect(), tr = tip.getBoundingClientRect();
+        if (!tipMeasured) {
+          tip.style.visibility = 'visible';
+          tipMeasured = true;
+        }
+        var cr = c.getBoundingClientRect();
+        var tr = tip.getBoundingClientRect();
         var t = cr.top - tr.height - 10, l = cr.left + cr.width / 2 - tr.width / 2;
         if (t < 8) t = cr.bottom + 10;
         if (l < 8) l = 8;
         if (l + tr.width > innerWidth - 8) l = innerWidth - 8 - tr.width;
-        tip.style.top = t + 'px'; tip.style.left = l + 'px';
-        tip.style.visibility = '';
-        tip.classList.add('visible');
+        tip.style.top = t + 'px';
+        tip.style.left = l + 'px';
+        tip.style.opacity = '1';
       });
       grid.addEventListener('mouseout', function(e) {
         var c = e.target.closest('.card');
         if (!c) return;
         var r = e.relatedTarget;
         if (r && r.closest && r.closest('.card')) return;
-        tip.classList.remove('visible'); cur = null;
+        tip.style.opacity = '0';
       });
-
-      // Count-up
-      (function up(el, to, ms) {
-        var n = 0, s = to / (ms / 16);
-        (function tick() {
-          n += s;
-          if (n >= to) { el.textContent = to; return; }
-          el.textContent = n | 0;
-          requestAnimationFrame(tick);
-        })();
-      })(document.getElementById('statTotal'), 139, 1000);
-      (function up(el, to, ms) {
-        var n = 0, s = to / (ms / 16);
-        (function tick() {
-          n += s;
-          if (n >= to) { el.textContent = to; return; }
-          el.textContent = n | 0;
-          requestAnimationFrame(tick);
-        })();
-      })(document.getElementById('statSearch'), 129, 1000);
-      (function up(el, to, ms) {
-        var n = 0, s = to / (ms / 16);
-        (function tick() {
-          n += s;
-          if (n >= to) { el.textContent = to; return; }
-          el.textContent = n | 0;
-          requestAnimationFrame(tick);
-        })();
-      })(document.getElementById('statPlatform'), 8, 800);
-
-      // Visit counter
-      try {
-        var d = new Date().toDateString(), c = JSON.parse(localStorage.getItem('pannav_stats') || '{}');
-        if (c.date !== d) c = { date: d, base: Math.floor(Math.random() * 200) + 100, count: 1 };
-        else c.count++;
-        localStorage.setItem('pannav_stats', JSON.stringify(c));
-        document.getElementById('statToday').textContent = c.base + c.count;
-      } catch(e) {}
-
-      // Debounced search (120ms)
-      var st;
-      searchInput.addEventListener('input', function() {
-        clearTimeout(st);
-        st = setTimeout(function() {
-          var q = searchInput.value.trim().toLowerCase(), v = 0;
-          for (var i = 0; i < len; i++) {
-            var catOk = activeCat === 'all' || cards[i].getAttribute('data-cat') === activeCat;
-            var searchOk = !q || idx[i].includes(q);
-            cards[i].style.display = (catOk && searchOk) ? '' : 'none';
-            if (catOk && searchOk) v++;
+      var counters = [
+        { el: document.getElementById('statTotal'), val: 132, dur: 1000 }
+      ];
+      counters.forEach(function(c) { c.n = 0; c.step = c.val / (c.dur / 16); });
+      function countTick() {
+        var allDone = true;
+        for (var i = 0; i < counters.length; i++) {
+          var c = counters[i];
+          if (c.n < c.val) {
+            c.n += c.step;
+            if (c.n >= c.val) { c.el.textContent = c.val; }
+            else { c.el.textContent = c.n | 0; allDone = false; }
           }
-          noResult.style.display = (v === 0) ? '' : 'none';
-        }, 120);
-      });
-
-      // Throttled scroll via rAF
+        }
+        if (!allDone) requestAnimationFrame(countTick);
+      }
+      requestAnimationFrame(countTick);
+      try {
+        var d = new Date().toDateString(), sc = JSON.parse(localStorage.getItem('pannav_stats') || '{}');
+        if (sc.date !== d) sc = { date: d, base: Math.floor(Math.random() * 200) + 100, count: 1 };
+        else sc.count++;
+        localStorage.setItem('pannav_stats', JSON.stringify(sc));
+        document.getElementById('statToday').textContent = sc.base + sc.count;
+      } catch(e) {}
       var ticking = false;
       window.addEventListener('scroll', function() {
         if (!ticking) {
@@ -1273,11 +1540,6 @@ body {
 
       backToTop.addEventListener('click', function() {
         scrollTo({ top: 0, behavior: 'smooth' });
-      });
-
-      document.addEventListener('keydown', function(e) {
-        if (e.key === '/' && document.activeElement !== searchInput) { e.preventDefault(); searchInput.focus(); }
-        if (e.key === 'Escape' && document.activeElement === searchInput) searchInput.blur();
       });
     })();
   </script>
